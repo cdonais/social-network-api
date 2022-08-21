@@ -15,7 +15,7 @@ const userController = {
 
         User.findOne({ _id: userId })
           .populate('friends')
-          // .populate('thoughts')
+          .populate('thoughts')
           .then(user => {
             if (!user) {
                 return res.status(404).json({ message: 'User not found.'})

@@ -9,7 +9,7 @@ const {
 
 router.route('/thoughts')
   .get(getAllThoughts)
-  .post(addThought);
+  .post(addThought)
 
 router.route('/thoughts/:id')
   .get(getSingleThought)
